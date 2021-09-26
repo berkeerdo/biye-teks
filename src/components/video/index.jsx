@@ -1,16 +1,17 @@
 import React from "react";
-import styled from "styled-components";
-import MyPost from "../../assets/videoLogo.mp4";
-
-const Vid = styled.video`
-  width: 100%;
-  max-height: 600px;
-  position: absolute;
-  object-fit: cover;
-`;
+import MyPost from "../../assets/videoLogo2.mp4";
+import ReactPlayer from "react-player";
 
 const VideoHeader = () => {
-  return <Vid src={MyPost} autoPlay muted  controls={false} />;
+  return (
+    <ReactPlayer style = {{marginBottom : "-5px"}}
+      height = {""}
+      width = {""}
+      playing={true}
+      muted = {true}
+      url={MyPost}
+    />
+  );
 };
 
 export default VideoHeader;
