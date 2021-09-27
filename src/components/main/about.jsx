@@ -7,11 +7,21 @@ const DivWrapper = styled(Box)(({ theme }) => ({
   position: "relative",
   maxWidth: "100%",
   minHeight: "400px",
+  fontFamily: "niagara-solid-regular",
 }));
 
 const ParWrapper = styled(Box)(({ theme }) => ({
   position: "absolute",
   top: "45%",
+  maxWidth: "50%",
+  maxHeight: "300px",
+  marginLeft: "2rem",
+  marginRight: "2rem",
+}));
+
+const HeaderWrapper = styled(Box)(({ theme }) => ({
+  position: "absolute",
+  top: "20%",
   maxWidth: "50%",
   maxHeight: "300px",
   marginLeft: "2rem",
@@ -30,6 +40,7 @@ const CustomButtonContact = styled(Button)(({ theme }) => ({
   width: "223px",
   "&:hover": {
     backgroundColor: "darkgrey",
+    color : "black",
   },
 }));
 
@@ -39,6 +50,7 @@ const CustomButtonAbout = styled(Button)(({ theme }) => ({
   width: "223px",
   "&:hover": {
     backgroundColor: "darkgrey",
+    color : "black",
   },
 }));
 
@@ -46,11 +58,19 @@ const About = () => {
   return (
     <main>
       <DivWrapper component="div">
-        <Typography variant="h4" component="div">
-          Hakkımızda
-        </Typography>
+        <HeaderWrapper>
+          <Typography className="headerTy" variant="h4" component="div">
+            Hakkımızda
+          </Typography>
+        </HeaderWrapper>
+
         <ParWrapper>
-          <Typography variant="h6" paragraph spacing={2}>
+          <Typography
+            className="paragraphTy"
+            variant="h6"
+            paragraph
+            spacing={2}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
             laudantium fugiat molestiae quam officia velit reiciendis fugit
             perspiciatis illo, delectus laboriosam facilis fuga praesentium eius

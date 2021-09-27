@@ -1,17 +1,15 @@
-import Footer from "./components/footer/index.jsx";
-import Vid from "./components/header/index.jsx";
-import MainAbout from "./components/main/index.jsx";
-import Navbar from "./components/navbar/index.jsx";
+import Landingpage from "./pages/landingpage.jsx";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Vid />
-      <MainAbout/>
-      <Footer/>
-    </>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Landingpage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
