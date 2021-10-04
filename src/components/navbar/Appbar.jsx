@@ -4,14 +4,18 @@ import { AppBar, Box, Toolbar, Link } from "@mui/material";
 import PoppinsM from "../../fonts/Poppins/Poppins-Regular.ttf";
 
 const CustomAppBar = styled(AppBar)(({ theme }) => ({
+  position : "relative",
   backgroundColor: "#d3d0cb",
   height: "60px",
+  marginBottom : "auto",
 }));
 
 const CustomToolbar = styled(Toolbar)(({ theme }) => ({
+  position : "relative",
   justifyContent: "center",
   fontFamily: { PoppinsM },
   fontWeight: "500",
+  marginBottom : "2rem",
 }));
 
 const CustomLink = styled(Link)(({ theme }) => ({
@@ -36,13 +40,13 @@ const AppBarNav = () => {
           <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
             Hakkımızda
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
             Biye Ürünleri
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
             Tela Ürünleri
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink sx={{ fontFamily: "Poppins" }} href="contact">
             İletişim
           </CustomLink>
         </CustomToolbar>

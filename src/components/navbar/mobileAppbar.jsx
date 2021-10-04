@@ -34,13 +34,13 @@ const MobileAppBarNav = () => {
           <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
             Hakkımızda
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
             Biye Ürünleri
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
             Tela Ürünleri
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink sx={{ fontFamily: "Poppins" }} href="/contact">
             İletişim
           </CustomLink>
         </CustomToolbar>

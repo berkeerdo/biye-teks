@@ -26,7 +26,8 @@ const FactoryImg = styled("img")(({ theme }) => ({
 }));
 
 const CustomButton = styled(Button)(({ theme }) => ({
-  backgroundColor: "#1E2019",
+  // backgroundColor: "#1E2019",
+  backgroundColor: "#587B7F",
   color: "white",
   borderRadius: "30px",
   width: "300px",
@@ -44,8 +45,8 @@ const Product = () => {
         <FactoryImg src={Factory} />
         <ButtonWrapper>
           <Stack spacing = {3}>
-            <CustomButton>Biye Çeşitleri</CustomButton>
-            <CustomButton>Tela Çeşitleri</CustomButton>
+            <CustomButton disabled>Biye Çeşitleri</CustomButton>
+            <CustomButton disabled>Tela Çeşitleri</CustomButton>
           </Stack>
         </ButtonWrapper>
       </DivWrapper>

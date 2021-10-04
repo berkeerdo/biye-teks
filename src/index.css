@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,22 +8,45 @@
   padding: 0;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e2c044 #393e41;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #393e41;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e2c044;
+  border: 3px solid #e2c044;
+}
+
 body {
-  /* font-family: 'Courier New', Courier, monospace;
-  font-weight: bold; */
   background-color: #393e41;
 }
 
 .paragraphTy {
   /* font-family: "Lobster", cursive !important; */
   /* font-family: 'Playfair Display SC', serif !important; */
-  font-family: 'Mate SC', serif !important;
+  font-family: "Mate SC", serif !important;
   font-weight: 700;
 }
 
 .headerTy {
   /* font-family: "Lobster", cursive !important; */
   /* font-family: 'Playfair Display SC', serif !important; */
-  font-family: 'Mate SC', serif !important;
+  font-family: "Mate SC", serif !important;
   font-weight: 700;
+}
+
+.main-container {
+  background-image: url(../src/assets/Biyeteks-Header.png);
 }

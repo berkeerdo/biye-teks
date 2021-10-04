@@ -24,7 +24,7 @@ const LogoImg = styled.div`
 const Logo = () => {
   return (
     <LogoWrapper>
-      <Link href= "#">
+      <Link href= "/">
         <LogoImg>
           <img src={BiyeteksLogo} alt="Biyeteks Logo" />
         </LogoImg>

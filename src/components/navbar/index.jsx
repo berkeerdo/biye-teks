@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import MobileAppBarNav from "./mobileAppbar";
 
 const LogoContainer = styled.div`
+  position: relative;
   width: auto;
   height: 60px;
   background-color: #d3d0cb;
@@ -19,16 +20,15 @@ const LogoContainer = styled.div`
 `;
 
 const Navbar = () => {
-
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <>
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      {!isMobile && <AppBarNav/>}
-      {isMobile && <MobileAppBarNav/>}
+      {!isMobile && <AppBarNav />}
+      {isMobile && <MobileAppBarNav />}
     </>
   );
 };
