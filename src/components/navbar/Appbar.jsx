@@ -46,7 +46,7 @@ const AppBarNav = () => {
           <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
             Tela Ürünleri
           </CustomLink>
-          <CustomLink sx={{ fontFamily: "Poppins" }} href="contact">
+          <CustomLink sx={{ fontFamily: "Poppins" }} href="/contact">
             İletişim
           </CustomLink>
         </CustomToolbar>

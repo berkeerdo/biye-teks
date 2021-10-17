@@ -13,7 +13,7 @@ const Link = styled.a`
 
 const LogoImg = styled.div`
   width: 140px;
-  height: 140px;
+  height: 60px;
 
   img {
     width: 100%;

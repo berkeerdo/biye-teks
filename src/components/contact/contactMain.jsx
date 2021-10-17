@@ -7,26 +7,25 @@ import {
   faEnvelope,
   faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Map from "./map";
+import MapImg from "../../assets/Map.png";
 
 const MainContainer = styled(Container)(({ theme }) => ({
-  minHeight: "82.9vh",
+  minHeight: "82.3vh",
   maxWidth: "100%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   backgroundSize: "cover",
-
 }));
 
 const ContactContainer = styled(Container)(({ theme }) => ({
   display: "flex",
   width: "1200px",
   borderRadius: "10px",
-  overflow : "hidden",
+  overflow: "hidden",
   padding: "10px",
-  marginBottom : "2rem",
+  marginBottom: "2rem",
   backdropFilter: "blur(15px)",
   border: "1px solid rgba(255,255,255, .2)",
   WebkitBoxShadow: "0px 10px 33px 0px rgba(0,0,0,0.75)",
@@ -70,22 +69,17 @@ const ContactInfo = styled(Box)(({ theme }) => ({
 }));
 
 const ContactMap = styled("div")(({ theme }) => ({
+  position: "relative",
   display: "flex",
   flexDirection: "column",
   flex: "1 1 50%",
   borderRadius: "10px",
   padding: "20px",
   marginLeft: "10px",
-  color: "white",
   overflow: "hidden",
   WebkitBoxShadow: "0px 10px 33px 0px rgba(0,0,0,0.75)",
   MozBoxShadow: "0px 10px 33px 0px rgba(0,0,0,0.75)",
   boxShadow: "0px 10px 33px 0px rgba(0,0,0,0.75)",
-
-  "&:hover": {
-    WebkitFilter: "blur(2px)",
-    filter: "blur(2px)",
-  },
 }));
 
 const IconText = styled("div")(({ theme }) => ({
@@ -106,6 +100,40 @@ const SpanTypography = styled(Typography)(({ thme }) => ({
   fontWeight: "300",
   marginTop: "6px",
 }));
+
+const CustomMap = styled("img")(({ theme }) => ({
+  opacity: "1",
+  display: "block",
+  transition: ".5s ease",
+  backfaceVisibility: "hidden",
+  height: "auto",
+  width: "100%",
+  borderRadius: "10%",
+}));
+
+const MapMiddle = styled("div")({
+  transition: ".5s ease",
+  opacity: "0",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  msTransform: "translate(-50%, -50%)",
+  textAlign: "center",
+});
+
+const MapLink = styled(Link)({
+  backgroundColor: "#E2C044",
+  color: "white",
+  fontSize: "16px",
+  padding : "16px 5px",
+  borderRadius : "2px",
+
+  "&:hover" : {
+    color : "black",
+  }
+
+});
 
 const ContactMain = () => {
   return (
@@ -149,13 +177,16 @@ const ContactMain = () => {
               </SpanTypography>
             </IconText>
           </ContactInfo>
-          <ContactMap>
-            <Link
-              href="https://www.google.com/maps/place/Seyyid+Ömer,+Miralay+Hasan+Kazımbey+Sk.+No:19,+34098+Fatih%2Fİstanbul/@41.008881,28.9293438,20z/data=!4m5!3m4!1s0x14caba4aa1c1aa71:0x9a5f1e1450ce3fd2!8m2!3d41.0089208!4d28.9292801"
-              underline="none"
-            >
-              <Map />
-            </Link>
+          <ContactMap className="container">
+            <CustomMap className="image" src={MapImg} />
+            <MapMiddle className="middle">
+              <MapLink
+                href="https://www.google.com/maps/place/Seyyid+Ömer,+Miralay+Hasan+Kazımbey+Sk.+No:19,+34098+Fatih%2Fİstanbul/@41.008881,28.9293438,20z/data=!4m5!3m4!1s0x14caba4aa1c1aa71:0x9a5f1e1450ce3fd2!8m2!3d41.0089208!4d28.9292801"
+                underline="none"
+              >
+                Haritalarda Görünteleyin
+              </MapLink>
+            </MapMiddle>
           </ContactMap>
         </ContactContainer>
       </MainContainer>

@@ -50,3 +50,14 @@ body {
 .main-container {
   background-image: url(../src/assets/Biyeteks-Header.png);
 }
+
+/* Contact Map Css */
+
+.container:hover .image {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
