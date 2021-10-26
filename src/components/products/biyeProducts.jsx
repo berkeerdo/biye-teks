@@ -15,7 +15,7 @@ const CusContainer = styled(Container)({
   marginTop: "20px",
 });
 
-function BiyeProducts({ title, author, published, coverImage }) {
+function BiyeProducts({ product }) {
   return (
     <CusContainer maxWidth="sm">
       <Grid>
@@ -25,18 +25,18 @@ function BiyeProducts({ title, author, published, coverImage }) {
               <CardMedia
                 component="img"
                 height="300"
-                image={coverImage}
+                image={product.fields.coverImage}
                 alt="factory"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  {title}
+                  {product.fields.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {author}
+                  {product.fields.author}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {published}
+                  {product.fields.published}
                 </Typography>
               </CardContent>
             </CardActionArea>
