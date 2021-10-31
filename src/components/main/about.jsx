@@ -40,7 +40,7 @@ const CustomButtonContact = styled(Button)(({ theme }) => ({
   width: "223px",
   "&:hover": {
     backgroundColor: "darkgrey",
-    color : "black",
+    color: "black",
   },
 }));
 
@@ -50,7 +50,7 @@ const CustomButtonAbout = styled(Button)(({ theme }) => ({
   width: "223px",
   "&:hover": {
     backgroundColor: "darkgrey",
-    color : "black",
+    color: "black",
   },
 }));
 
@@ -84,7 +84,7 @@ const About = () => {
             <CustomButtonAbout variant="contained" disableRipple>
               Detaylar
             </CustomButtonAbout>
-            <CustomButtonContact variant="contained" disableRipple>
+            <CustomButtonContact href="/contact" variant="contained" disableRipple>
               Bize Ulaşın
             </CustomButtonContact>
           </Stack>

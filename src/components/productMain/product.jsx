@@ -14,7 +14,7 @@ const ButtonWrapper = styled(Box)(({ theme }) => ({
   backgroundColor: "#393e41",
   position: "absolute",
   right: "15%",
-  top : "35%"
+  top: "35%"
 }));
 
 const FactoryImg = styled("img")(({ theme }) => ({
@@ -31,10 +31,10 @@ const CustomButton = styled(Button)(({ theme }) => ({
   color: "white",
   borderRadius: "30px",
   width: "300px",
-  height : "50px",
+  height: "50px",
   "&:hover": {
     backgroundColor: "darkgrey",
-    color : "black",
+    color: "black",
   },
 }));
 
@@ -44,9 +44,9 @@ const Product = () => {
       <DivWrapper>
         <FactoryImg src={Factory} />
         <ButtonWrapper>
-          <Stack spacing = {3}>
-            <CustomButton disabled>Biye Çeşitleri</CustomButton>
-            <CustomButton disabled>Tela Çeşitleri</CustomButton>
+          <Stack spacing={3}>
+            <CustomButton href="/biye">Biye Çeşitleri</CustomButton>
+            <CustomButton href="/tela">Tela Çeşitleri</CustomButton>
           </Stack>
         </ButtonWrapper>
       </DivWrapper>

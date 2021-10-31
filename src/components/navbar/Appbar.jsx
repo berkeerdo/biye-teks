@@ -40,10 +40,10 @@ const AppBarNav = () => {
           <CustomLink sx={{ fontFamily: "Poppins" }} href="#">
             Hakkımızda
           </CustomLink>
-          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink sx={{ fontFamily: "Poppins" }} href="/biye">
             Biye Ürünleri
           </CustomLink>
-          <CustomLink hidden sx={{ fontFamily: "Poppins" }} href="#">
+          <CustomLink sx={{ fontFamily: "Poppins" }} href="/tela">
             Tela Ürünleri
           </CustomLink>
           <CustomLink sx={{ fontFamily: "Poppins" }} href="/contact">

@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import Airtable from "airtable";
 import BiyeCard from "./biyeCard";
+import { Grid } from "@mui/material";
+import { styled } from "@mui/styles";
 
 const base = new Airtable({ apiKey: "keyCufMBXi6g7IwBf" }).base(
   "app1a5JmlkVQXSqWE"
 );
+
+const CustomGrid = styled(Grid) ({
+  minHeight : "82.3vh",
+  overflow: "hidden",
+})
 
 function BiyeProduct() {
 
@@ -21,11 +28,11 @@ function BiyeProduct() {
 
 
   return (
-    <>
+    <CustomGrid container>
       {biyeProducts.map(product => (
         <BiyeCard product={product} key={product.id} />
       ))}
-    </>
+    </CustomGrid>
   );
 }
 
