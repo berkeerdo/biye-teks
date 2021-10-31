@@ -1,18 +1,19 @@
-import BiyeProducts from "./biyeProducts";
 import { useEffect, useState } from "react";
 import Airtable from "airtable";
+import BiyeCard from "./biyeCard";
 
 const base = new Airtable({ apiKey: "keyCufMBXi6g7IwBf" }).base(
   "app1a5JmlkVQXSqWE"
 );
 
-function Products() {
+function BiyeProduct() {
 
-  const [products, setProducts] = useState([]);
+  const [biyeProducts, setbiyeProducts] = useState([]);
+
 
   useEffect(() => {
     base("BiyeUrunleri").select({ view: "Grid view" }).eachPage((records, fetchNextPage) => {
-      setProducts(records);
+      setbiyeProducts(records);
       console.log(records);
       fetchNextPage();
     })
@@ -21,11 +22,11 @@ function Products() {
 
   return (
     <>
-      {products.map(product => (
-        <BiyeProducts product={product} key={product.id} />
+      {biyeProducts.map(product => (
+        <BiyeCard product={product} key={product.id} />
       ))}
     </>
-  )
+  );
 }
 
-export default Products;
+export default BiyeProduct;

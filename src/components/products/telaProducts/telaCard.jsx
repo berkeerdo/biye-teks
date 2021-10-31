@@ -1,14 +1,29 @@
 import React from 'react'
+import Container from "@mui/material/Container";
 import {
     Card,
     CardContent,
     CardMedia,
     Typography,
 } from "@mui/material";
+import { styled } from "@mui/styles";
 
-function ProductCard({ product }) {
+const CusContainer = styled(Container)({
+    marginTop: "20px",
+    marginBottom: "20px",
+    minHeight: "100%",
+});
+
+const CustomCard = styled(Card)({
+    backgroundColor: "rgb(211, 208, 203)",
+    width: "500px",
+})
+
+
+function TelaCard({ product }) {
     return (
-            <Card>
+        <CusContainer maxWidth="xl">
+            <CustomCard>
                 <CardMedia
                     component="img"
                     height="300"
@@ -23,8 +38,9 @@ function ProductCard({ product }) {
                         {product.fields.Details}
                     </Typography>
                 </CardContent>
-            </Card>
+            </CustomCard>
+        </CusContainer>
     )
 }
 
-export default ProductCard
+export default TelaCard
