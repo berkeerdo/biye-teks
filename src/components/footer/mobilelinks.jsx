@@ -12,6 +12,7 @@ const MainFooter = styled(Box)(({ theme }) => ({
 const FirstFooter = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
+  alignItems : "center",
   width: "100%",
   height: "24px",
   backgroundColor: "#D3D0CB",

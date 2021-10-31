@@ -41,14 +41,12 @@ body {
 }
 
 .headerTy {
-  /* font-family: "Lobster", cursive !important; */
-  /* font-family: 'Playfair Display SC', serif !important; */
   font-family: "Mate SC", serif !important;
   font-weight: 700;
 }
 
 .main-container {
-  background-image: url(../src/assets/Biyeteks-Header.png);
+  background-image: url(../src/assets/Biyeteks-Header.webp);
 }
 
 /* Contact Map Css */
