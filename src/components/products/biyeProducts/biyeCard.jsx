@@ -26,7 +26,7 @@ function BiyeCard({ product }) {
           component="img"
           height="300"
           src={product.fields.imageURL[0].url}
-          alt="factory"
+          alt="Product Image"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

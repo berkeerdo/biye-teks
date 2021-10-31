@@ -4,11 +4,11 @@ import ReactPlayer from "react-player";
 
 const VideoHeader = () => {
   return (
-    <ReactPlayer style = {{marginBottom : "-5px"}}
-      height = {""}
-      width = {""}
+    <ReactPlayer style={{ marginBottom: "-5px" }}
+      height={""}
+      width={""}
       playing={true}
-      muted = {true}
+      muted={true}
       url={MyPost}
     />
   );

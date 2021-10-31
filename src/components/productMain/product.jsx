@@ -42,7 +42,7 @@ const Product = () => {
   return (
     <>
       <DivWrapper>
-        <FactoryImg src={Factory} />
+        <FactoryImg src={Factory} alt="Factory" />
         <ButtonWrapper>
           <Stack spacing={3}>
             <CustomButton href="/biye">Biye Çeşitleri</CustomButton>

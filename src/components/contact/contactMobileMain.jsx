@@ -154,7 +154,7 @@ const ContactMobileMain = () => {
               href="https://www.google.com/maps/place/Seyyid+Ömer,+Miralay+Hasan+Kazımbey+Sk.+No:19,+34098+Fatih%2Fİstanbul/@41.008881,28.9293438,20z/data=!4m5!3m4!1s0x14caba4aa1c1aa71:0x9a5f1e1450ce3fd2!8m2!3d41.0089208!4d28.9292801"
               underline="none"
             >
-              <CustomMap src={MapImg} />
+              <CustomMap src={MapImg} alt="Contact Map" />
             </Link>
           </ContactMap>
         </ContactContainer>
